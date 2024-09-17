@@ -1,0 +1,139 @@
+/* .board {
+  background-color: white;
+  color: black;
+  padding-top: 4.722vw;
+  padding-left: 7.431vw;
+  padding-bottom: 86px;
+  padding-right: 80px;
+  height: calc(933px - 88px);
+  .head {
+    margin-bottom: 77px;
+    h2 {
+      padding-bottom: 41px;
+    }
+  }
+  h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  span.user {
+    color: red;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 0fr 0.8fr 0.2fr;
+    /* grid-template-rows: 1fr 2.1fr 0.1fr; 
+    gap: 0px 0px;
+    grid-template-areas:
+      "activity activity counter"
+      ". group-graph counter"
+      ". . counter";
+  }
+  .activity {
+    grid-area: activity;
+  }
+  .counter {
+    grid-area: counter;
+  }
+  .group-graph {
+    grid-area: group-graph;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .board {
+    padding-left: 2vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .board {
+    padding-left: 109px;
+    padding-right: 90px;
+    padding-bottom: 88px;
+  } 
+} */
+
+
+.board {
+  background-color: white;
+  color: black;
+  padding-top: 4.722vw;
+  padding-left: 7.431vw;
+  padding-bottom: 86px;
+  padding-right: 80px;
+  height: calc(933px - 88px);
+
+  .head {
+    margin-bottom: 77px;
+    h2 {
+      padding-bottom: 41px;
+    }
+  }
+
+  h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  span.user {
+    color: red;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 0fr 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "activity activity counter"
+      ". group-graph counter"
+      ". . counter";
+  }
+
+  .activity {
+    grid-area: activity;
+  }
+
+  .counter {
+    grid-area: counter;
+  }
+
+  .group-graph {
+    grid-area: group-graph;
+  }
+
+  @media screen and (max-width: 1355px) {
+    .board{
+      height: fit-content!important;
+    }
+    .main-content {
+      grid-template-columns: 1fr; /* Adjusts to single column layout */
+      grid-template-areas:
+        "activity"
+        "group-graph"
+        "counter";
+    }
+    .counter{
+      display: flex;
+      flex-direction: row;
+      height: fit-content
+    }
+  }
+}
+
+/* Commented-out media queries for future reference
+@media screen and (max-width: 1280px) {
+  .board {
+    padding-left: 2vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .board {
+    padding-left: 109px;
+    padding-right: 90px;
+    padding-bottom: 88px;
+  } 
+}
+*/

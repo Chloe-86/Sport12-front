@@ -1,0 +1,27 @@
+.sideBar {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .activities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  p {
+    height: 24px;
+    width: 138px;
+    bottom: 56px;
+    padding-right: 300px;
+    transform: rotate(-90deg);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.header {
+  grid-column: 1 / -1; /* Le header prend toute la largeur du grid */
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 91px;
+  font-family: "Roboto";
+  background-color: black;
+  color: white;
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  .navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+  }
+
+  .logotext {
+    width: 109.302px;
+    height: 24.286px;
+    margin-left: 10.5px;
+  }
+
+  .logoimg {
+    object-fit: cover;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    gap: 15vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280) {
+  .header nav ul {
+    gap: 7vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header nav ul {
+    gap: 12vw;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header{
+    padding-right: 12vw;
+  }
+  .header nav ul {
+    gap: 10vw;
+  }
+}

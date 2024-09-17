@@ -1,0 +1,28 @@
+ #root {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-width: 320px;
+
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 91px 1fr;
+  grid-template-columns: 117px 1fr;
+  /* height: 100vh; */
+}
+
+.title{
+  font-weight: 700;
+  font-size: 36px;
+  background-color: #F00;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  }
+
+/* @media screen and (max-width:1280px) {
+  .container{
+    grid-template-columns: 80px 1fr;
+  }
+} */

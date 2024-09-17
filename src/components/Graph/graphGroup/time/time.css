@@ -1,0 +1,30 @@
+.time {
+  background-color: #f00;
+  color: white;
+  position: relative;
+  p {
+    position: absolute;
+    opacity: 0.504;
+    top: 29px;
+    left: 34px;
+    width: 147px;
+  }
+}
+
+.custom-tooltip-time {
+  color: rgb(0, 0, 0);
+  margin: 2px;
+  opacity: 1;
+}
+.custom-tooltip-time p {
+  width: 39px;
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

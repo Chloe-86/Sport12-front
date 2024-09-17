@@ -1,0 +1,19 @@
+.score {
+  background-color: #fbfbfb;
+  position: relative;
+  z-index: 1;
+  .label {
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #74798c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    width: 95px;
+    text-align: center;
+  }
+}

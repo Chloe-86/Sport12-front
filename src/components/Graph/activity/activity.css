@@ -1,0 +1,57 @@
+.activity {
+  height: 320px;
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  background: #fbfbfb;
+
+  .bar-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-bottom: 35px;
+  }
+  .left-bar {
+    font-size: 15px;
+    padding-left: 32px;
+  }
+  .right-bar {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    p {
+      font-size: 14px;
+      color: #74798c;
+    }
+    .cal,
+    .weight {
+      display: flex;
+      gap: 12px;
+    }
+  }
+  .graph {
+    width: 100%;
+  }
+  .custom-tooltip-Activity{
+    background-color: red;
+    width: 39px;
+    height: 63px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+}
+.custom-tooltip-Activity p {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 342.857% */
+ 
+}
+}
