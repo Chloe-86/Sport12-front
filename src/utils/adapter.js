@@ -7,11 +7,11 @@ export const adaptSessions = (data, isMock) => {
     return isMock ? data.sessions : data.data.sessions;
   };
 
-export const adaptScore = (data, isMock, id) => {
-    if (isMock) {
-      return id === 12 ? data.todayScore : data.score;
-    } else {
-      return id === 12 ? data.data.todayScore : data.data.score;
-    }
-  };
+export const adaptScore = (data, isMock) => {
+  if (isMock) {
+    return data.todayScore ?? data.score;
+  } else {
+    return data.data.todayScore ?? data.data.score;
+  }
+};
   

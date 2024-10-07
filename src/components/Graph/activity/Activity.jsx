@@ -20,12 +20,12 @@ const Activity = ({ dataActivity, isMock }) => {
   }, [dataActivity, isMock]);
   
 
-   // Fonction pour basculer entre les axes Y
+
    const toggleYAxis = (type) => {
     if (type === 'weight') {
-      setShowWeightYAxis(true); // Affiche l'axe pour le poids
+      setShowWeightYAxis(true); 
     } else {
-      setShowWeightYAxis(false); // Affiche l'axe pour les calories
+      setShowWeightYAxis(false);
     }
   };
 
@@ -80,14 +80,20 @@ const Activity = ({ dataActivity, isMock }) => {
                 <XAxis dataKey="day" tickFormatter={formatDate} />
                  {/* Affiche YAxis en fonction de l'état showWeightYAxis */}
                 {showWeightYAxis ? (
-                  <YAxis orientation="right" dataKey="kilogram" tickFormatter={(tick) => `${tick}kg`} domain={['dataMin-2', 'dataMax+2']} />
+                  <>
+                   <YAxis orientation="right" yAxisId="right" dataKey="kilogram" tickFormatter={(tick) => `${tick} kg`} domain={['dataMin-2', 'dataMax+2']} />
+                   <YAxis orientation="right" yAxisId="left" hide={true} dataKey="calories" tickFormatter={(tick) => `${tick} cal`} />
+                   </>
                 ) : (
-                  <YAxis orientation="right" dataKey="calories" />
+                  <>
+                  <YAxis orientation="right" yAxisId="right" hide={true} dataKey="kilogram" tickFormatter={(tick) => `${tick}kg`} domain={['dataMin-2', 'dataMax+2']} />
+                   <YAxis orientation="right" yAxisId="left"  dataKey="calories" tickFormatter={(tick) => `${tick} cal`} />
+                   </>
                 )}
 
                 <Tooltip content={CustomTooltip} />
-                <Bar dataKey="kilogram" fill="#000000" barSize={7} radius={3}/>
-                <Bar dataKey="calories" fill="#E60000" barSize={7} radius={3}/>
+                <Bar dataKey="kilogram"  yAxisId="right"  fill="#000000" barSize={7} radius={3}/>
+                <Bar dataKey="calories" yAxisId="left" fill="#E60000" barSize={7} radius={3}/>
               </BarChart>
             </ResponsiveContainer>
           </div>

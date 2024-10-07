@@ -6,8 +6,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: process.env.VITE_HOST,   // Utilisation de la variable d'environnement pour le host
-    port: 5173,   // Utilisation de la variable d'environnement pour le port
+    host: process.env.HOST,   // Utilisation de la variable d'environnement pour le host
+    port: process.env.PORT,   // Utilisation de la variable d'environnement pour le port
     hmr: {
       host: process.env.HOST, // HMR utilise également le domaine personnalisé
       port: process.env.PORT, // HMR utilise le même port

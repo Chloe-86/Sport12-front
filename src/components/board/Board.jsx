@@ -5,6 +5,7 @@ import Settings from "../../pages/Settings";
 import Community from "../../pages/Community"; // Assure-toi que ce chemin est correct
 import "./board.css";
 
+
 const Board = ({ activeView, onViewChange }) => {
   return (
     <div className="board">

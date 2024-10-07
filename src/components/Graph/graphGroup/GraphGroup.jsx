@@ -2,7 +2,6 @@ import Time from "./time/Time";
 import Intensity from "./intensity/Intensity";
 import Score from "./score/Score";
 import "./graphGroup.css";
-import PropTypes from 'prop-types';
 
 const GraphGroup = ({ dataPerf, dataMoy, dataUser, isMock }) => {
   
@@ -15,11 +14,5 @@ const GraphGroup = ({ dataPerf, dataMoy, dataUser, isMock }) => {
   );
 };
 
-GraphGroup.propTypes = {
-  dataPerf: PropTypes.object,
-  dataMoy: PropTypes.object,
-  dataUser: PropTypes.object,
-  isMock: PropTypes.bool.isRequired,
-};
 
 export default GraphGroup;

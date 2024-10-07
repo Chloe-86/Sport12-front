@@ -44,9 +44,9 @@ const Time = ({ dataMoy, isMock }) => {
         fill="#000"
         stroke="none"
         x={x}
-        y={0} // L'origine (en haut du graphique)
+        y={0} 
         width={width}
-        height={height+50} // On ajoute la hauteur du `LineChart` + la marge en bas
+        height={height+50} 
       />
     );
   };
