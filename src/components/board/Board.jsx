@@ -9,12 +9,10 @@ import "./board.css";
 const Board = ({ activeView, onViewChange }) => {
   return (
     <div className="board">
-      <main>
         {activeView === "Profil" && <Profil />}
         {activeView === "Accueil" && <Home onViewChange={onViewChange}/>}
         {activeView === "Settings" && <Settings />}
         {activeView === "Communauté" && <Community />}
-      </main>
     </div>
   );
 };

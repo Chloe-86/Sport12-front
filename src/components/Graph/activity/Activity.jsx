@@ -49,7 +49,7 @@ const Activity = ({ dataActivity, isMock }) => {
       {!dataActivity ? (
         <div>Erreur lors du chargement des données</div>
       ) : (
-        <div className="activity">
+        <article className="activity">
           <div className="bar-activity">
             <div className="left-bar">
               <p>Activité quotidienne</p>
@@ -97,7 +97,7 @@ const Activity = ({ dataActivity, isMock }) => {
               </BarChart>
             </ResponsiveContainer>
           </div>
-        </div>
+        </article>
       )}
     </>
   );

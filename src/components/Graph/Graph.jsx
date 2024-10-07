@@ -14,7 +14,7 @@ const Graph = () => {
   const [dataAverageSessions, setDataAverageSessions] = useState(null);
   const [dataPerformance, setDataPerformance] = useState(null);
   const [isMock, setIsMock] = useState(false);
-  const [name, setName] = useState("Utilisateur03");
+  const [name, setName] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Graph = () => {
   }, [dataUser, isMock]);
   
   return (
-    <main>
+    <>
       {loading && <div>Chargement...</div>}
 
       {!loading && (
@@ -68,7 +68,7 @@ const Graph = () => {
           )}
         </>
       )}
-    </main>
+    </>
   );
 };
 

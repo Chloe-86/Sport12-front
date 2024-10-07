@@ -52,8 +52,8 @@ const Time = ({ dataMoy, isMock }) => {
   };
 
   return (
-    <>
-    <div className="time card">
+  
+    <article className="time card">
       <p>Durée moyenne des sessions</p>
       <ResponsiveContainer width="100%" >
         <LineChart data={sessions} margin={{bottom: 16 }}>
@@ -63,8 +63,7 @@ const Time = ({ dataMoy, isMock }) => {
           <Tooltip  cursor={<CustomCursor />} content={CustomTooltip} />
         </LineChart>
       </ResponsiveContainer>
-    </div> 
-    </>
+    </article>
   );
 };
 

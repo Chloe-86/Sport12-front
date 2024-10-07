@@ -2,7 +2,7 @@ import "./aside.css";
 
 const Aside = () => {
   return (
-    <div className="sideBar">
+    <aside className="sideBar">
       <div className="activities">
         <img src="src/assets/icons/relax.svg" alt="relax icon" />
         <img src="src/assets/icons/swim.svg" alt="swim icon" />
@@ -10,7 +10,7 @@ const Aside = () => {
         <img src="src/assets/icons/muscu.svg" alt="haltere icon" />
       </div>
       <p>Copyright, SportSee 2020</p>
-    </div>
+    </aside>
   );
 };
 

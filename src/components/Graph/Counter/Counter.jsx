@@ -15,7 +15,7 @@ const Counter = ({ dataUser, isMock }) => {
 
   
   return (
-    <div className="counter">
+    <article className="counter">
       <div className="logoCounter" id="cal">
         <div className="leftpart">
           <img src="src/assets/icons/cal.svg" alt="icon feu" />
@@ -52,7 +52,7 @@ const Counter = ({ dataUser, isMock }) => {
           <p>Lipides</p>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -36,7 +36,7 @@ const Score = ({ dataUser, isMock }) => {
   };
 
   return (
-    <div className="score card">
+    <article className="score card">
       <p className="label">de votre objectif</p>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
@@ -81,7 +81,7 @@ const Score = ({ dataUser, isMock }) => {
       >
         {`${percentageScore} %`}
       </div>
-    </div>
+    </article>
   );
 };
 
